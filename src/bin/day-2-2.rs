@@ -19,7 +19,7 @@ fn main() -> io::Result<()> {
             let first_index_char = password.chars().nth(first_index).unwrap();
             let second_index_char = password.chars().nth(second_index).unwrap();
             let required_character = required_character.chars().nth(0).unwrap();
-            if (first_index_char == required_character && second_index_char != required_character) || (first_index_char != required_character && second_index_char == required_character) {
+            if (first_index_char == required_character) ^ (second_index_char == required_character) {
                 counter = counter + 1;
             }
         }
