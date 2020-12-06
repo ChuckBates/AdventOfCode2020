@@ -1,6 +1,5 @@
 use std::fs::File;
 use std::io::{BufRead, BufReader};
-use std::collections::BTreeMap;
 
 fn main() {
     let input_file_path = "src/bin/inputs/day_five_input.txt";
@@ -77,10 +76,6 @@ fn parse_input(file_path:&str) -> Vec<String> {
     }
 
     return result;
-}
-
-fn split_line<'a>(separator: &'a str, line: &'a str) -> Vec<&'a str> {
-    return line.split(separator).collect::<Vec<&str>>();
 }
 
 fn find_row(directions: &str) -> usize {
