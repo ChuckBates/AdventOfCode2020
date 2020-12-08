@@ -69,7 +69,7 @@ fn when_getting_the_seat_id() {
 
 #[test]
 fn when_executing_part_one() {
-    let input_file_path = "src/bin/tests/inputs/day_five_input_example.txt";
+    let input_file_path = "src/bin/tests/inputs/day_five/day_five_input_example.txt";
     let expected = 820;
 
     assert_eq!(execute_part_one(input_file_path), expected);

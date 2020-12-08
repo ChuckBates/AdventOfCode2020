@@ -2,7 +2,7 @@ use super::*;
 
 #[test]
 fn test_part_one_example() {
-    let input_file_path = "src/bin/tests/inputs/day_three_input_example.txt";
+    let input_file_path = "src/bin/tests/inputs/day_three/day_three_input_example.txt";
     let input_slope = vec![3,1];
     let expected = 7;
 
@@ -11,7 +11,7 @@ fn test_part_one_example() {
 
 #[test]
 fn test_part_two_example() {
-    let input_file_path = "src/bin/tests/inputs/day_three_input_example.txt";
+    let input_file_path = "src/bin/tests/inputs/day_three/day_three_input_example.txt";
     let input_slopes = vec![vec![1,1],vec![3,1],vec![5,1],vec![7,1],vec![1,2]];
     let expected = 336;
 
@@ -20,7 +20,7 @@ fn test_part_two_example() {
 
 #[test]
 fn test_parse_input() {
-    let input_file_path = "src/bin/tests/inputs/day_three_input_example_simple.txt";
+    let input_file_path = "src/bin/tests/inputs/day_three/day_three_input_example_simple.txt";
     let expected = vec![vec![".","#"], vec!["#","."]];
 
     assert_eq!(parse_input(input_file_path), expected);

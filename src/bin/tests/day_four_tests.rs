@@ -2,7 +2,7 @@ use super::*;
 
 #[test]
 fn when_parsing_input_and_there_is_only_one_line() {
-    let input_file_path = "src/bin/tests/inputs/day_four_input_example_one.txt";
+    let input_file_path = "src/bin/tests/inputs/day_four/day_four_input_example_one.txt";
     let expected = vec![vec!["ecl:gry", "pid:860033327", "eyr:2020", "hcl:#fffffd"]];
 
     assert_eq!(parse_input(input_file_path), expected);
@@ -10,7 +10,7 @@ fn when_parsing_input_and_there_is_only_one_line() {
 
 #[test]
 fn when_parsing_input_and_there_are_two_lines_with_no_empty_lines() {
-    let input_file_path = "src/bin/tests/inputs/day_four_input_example_two.txt";
+    let input_file_path = "src/bin/tests/inputs/day_four/day_four_input_example_two.txt";
     let expected = vec![vec!["ecl:gry", "pid:860033327", "eyr:2020", "hcl:#fffffd", "byr:1937", "iyr:2017", "cid:147", "hgt:183cm"]];
 
     assert_eq!(parse_input(input_file_path), expected);
@@ -18,7 +18,7 @@ fn when_parsing_input_and_there_are_two_lines_with_no_empty_lines() {
 
 #[test]
 fn when_parsing_input_and_there_are_four_lines_with_on_empty_line() {
-    let input_file_path = "src/bin/tests/inputs/day_four_input_example_three.txt";
+    let input_file_path = "src/bin/tests/inputs/day_four/day_four_input_example_three.txt";
     let expected = vec![
         vec!["ecl:gry", "pid:860033327", "eyr:2020", "hcl:#fffffd", "byr:1937", "iyr:2017", "cid:147", "hgt:183cm"],
         vec!["iyr:2013", "ecl:amb", "cid:350", "eyr:2023", "pid:028048884"]
@@ -29,7 +29,7 @@ fn when_parsing_input_and_there_are_four_lines_with_on_empty_line() {
 
 #[test]
 fn when_parsing_input_and_there_are_four_passports() {
-    let input_file_path = "src/bin/tests/inputs/day_four_input_example_full.txt";
+    let input_file_path = "src/bin/tests/inputs/day_four/day_four_input_example_full.txt";
     let expected = 4;
 
     assert_eq!(parse_input(input_file_path).len(), expected);
@@ -37,7 +37,7 @@ fn when_parsing_input_and_there_are_four_passports() {
 
 #[test]
 fn when_parsing_input_example() {
-    let input_file_path = "src/bin/tests/inputs/day_four_input_example_full.txt";
+    let input_file_path = "src/bin/tests/inputs/day_four/day_four_input_example_full.txt";
     let expected = vec![
         vec!["ecl:gry", "pid:860033327", "eyr:2020", "hcl:#fffffd", "byr:1937", "iyr:2017", "cid:147", "hgt:183cm"],
         vec!["iyr:2013", "ecl:amb", "cid:350", "eyr:2023", "pid:028048884", "hcl:#cfa07d", "byr:1929"],
@@ -185,7 +185,7 @@ fn when_validating_passport_and_it_is_missing_pid() {
 
 #[test]
 fn when_executing_part_one() {
-    let input_file_path = "src/bin/tests/inputs/day_four_input_example_full.txt";
+    let input_file_path = "src/bin/tests/inputs/day_four/day_four_input_example_full.txt";
     let expected = 2;
 
     assert_eq!(execute_part_one(input_file_path), expected);
@@ -342,7 +342,7 @@ fn when_validating_passport_id_and_it_is_valid() {
 
 #[test]
 fn when_executing_part_two_for_valid_passports() {
-    let input_file_path = "src/bin/tests/inputs/day_four_input_example_valid.txt";
+    let input_file_path = "src/bin/tests/inputs/day_four/day_four_input_example_valid.txt";
     let expected = 4;
 
     assert_eq!(execute_part_two(input_file_path), expected);
@@ -350,7 +350,7 @@ fn when_executing_part_two_for_valid_passports() {
 
 #[test]
 fn when_executing_part_two_for_invalid_passports() {
-    let input_file_path = "src/bin/tests/inputs/day_four_input_example_invalid.txt";
+    let input_file_path = "src/bin/tests/inputs/day_four/day_four_input_example_invalid.txt";
     let expected = 0;
 
     assert_eq!(execute_part_two(input_file_path), expected);
