@@ -65,7 +65,7 @@ fn get_new_accumulator(lines: Vec<String>) -> isize {
 
 fn execute_part_two(file_path:&str) -> isize {
     let lines = parse_input(file_path);
-    let mut accumulator = 0;
+    let accumulator = 0;
 
     for line in lines.clone() {
         let parts = line.split(" ").collect::<Vec<&str>>();
